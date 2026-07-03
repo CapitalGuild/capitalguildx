@@ -319,6 +319,31 @@
             color: #000;
         }
 
+        .pricing-feature-highlight {
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            animation: pricing-feature-glow 2.4s ease-in-out infinite;
+        }
+        .pricing-feature-highlight::after {
+            content: "";
+            position: absolute;
+            inset: -40% -70%;
+            background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.24) 48%, transparent 62%);
+            transform: translateX(-55%);
+            animation: pricing-feature-shine 3.2s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes pricing-feature-glow {
+            0%, 100% { box-shadow: 0 0 18px rgba(212,175,55,0.12), inset 0 0 0 1px rgba(212,175,55,0.10); }
+            50% { box-shadow: 0 0 30px rgba(212,175,55,0.28), inset 0 0 0 1px rgba(212,175,55,0.22); }
+        }
+        @keyframes pricing-feature-shine {
+            0% { transform: translateX(-65%); opacity: 0; }
+            18% { opacity: 1; }
+            45% { transform: translateX(65%); opacity: 0; }
+            100% { transform: translateX(65%); opacity: 0; }
+        }
         /* Live chat float */
         .live-chat-wrap {
             animation: live-chat-bounce 2.8s ease-in-out infinite;
@@ -1015,12 +1040,12 @@
 </div>
 <p class="text-xs text-gold-500/80 uppercase tracking-[0.2em] mb-4">Recommended for Time-Constrained Participants</p>
 <div class="mb-6">
-<span class="text-5xl font-black bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">₹45,000</span>
+<span class="text-5xl font-black bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">₹49,999</span>
 </div>
 <p class="text-sm text-neutral-300 leading-relaxed mb-6">Includes everything in Full Mentorship, plus additional support to understand Buyer/Seller Activity in live market conditions.</p>
 <ul class="space-y-3 mb-6 text-sm">
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>All topics from Full Mentorship</span></li>
-<li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Live market Buyer/Seller activity understanding</span></li>
+<li class="pricing-feature-highlight flex items-start gap-3 text-white rounded-xl border border-gold-500/45 bg-gold-500/10 p-3 shadow-lg shadow-gold-500/10"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-400 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="font-semibold text-gold-100">Live market Buyer/Seller activity understanding</span></li>
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Execution clarity in real-time context</span></li>
 </ul>
 <p class="text-gold-500/85 text-sm mb-2">This is a guided support phase to help you apply the framework efficiently.</p>
@@ -1045,13 +1070,13 @@
 <span class="text-xs text-gold-500/80 bg-gold-500/10 px-3 py-1 rounded-full tracking-wider">Core Framework</span>
 </div>
 <div class="mb-6">
-<span class="text-5xl font-black text-white">₹35,000</span>
+<span class="text-5xl font-black text-white">₹39,999</span>
 </div>
 <p class="text-sm text-neutral-300 leading-relaxed mb-6">A structured mentorship experience focused on execution clarity, market reading, risk management, and disciplined decision-making.</p>
 <ul class="space-y-3 mb-6 text-sm">
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Market Structure</span></li>
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Liquidity Advance</span></li>
-<li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Buyer/Seller Activity</span></li>
+<li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Buyer/Seller activity understanding</span></li>
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Timeframe Alignment</span></li>
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Entry Timing</span></li>
 <li class="flex items-start gap-3 text-neutral-300"><svg aria-hidden="true" class="lucide lucide-check-circle-2 w-5 h-5 text-gold-500 shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Risk Management Framework</span></li>
