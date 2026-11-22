@@ -35,6 +35,7 @@ if (calculator) {
       output.textContent = error.message;
     }
   };
+  calculator.addEventListener("input", calculate);
   calculator.addEventListener("submit", event => { event.preventDefault(); calculate(); });
   calculate();
 }
