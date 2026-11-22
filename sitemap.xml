@@ -4,4 +4,10 @@
     <loc>https://capitalguildx.com/</loc>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://www.capitalguildx.com/futuresedge/</loc></url>
+  <url><loc>https://www.capitalguildx.com/futuresedge/mnq-position-size.html</loc></url>
+  <url><loc>https://www.capitalguildx.com/futuresedge/nq-position-size.html</loc></url>
+  <url><loc>https://www.capitalguildx.com/futuresedge/mes-position-size.html</loc></url>
+  <url><loc>https://www.capitalguildx.com/futuresedge/es-position-size.html</loc></url>
+  <url><loc>https://www.capitalguildx.com/futuresedge/mgc-position-size.html</loc></url>
 </urlset>
